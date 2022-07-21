@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid rgb(0, 19, 194);
-} */
+}
 
 .Wrap {
     letter-spacing: -0.025em;
@@ -169,7 +169,7 @@
 /* Weekly Best */
 .weekly_best {
     position: relative;
-    padding: 150px 0;
+    padding: 130px 0;
     text-align: center;
 }
 
@@ -183,6 +183,7 @@
 .weekly_best p {
     font-size: 15px;
     font-weight: 300;
+    color: #000;
     margin: 0 0 30px 0;
 }
 
@@ -206,11 +207,10 @@
 
 .weekly_best .best_arrow i {
     position: absolute;
-    color: #573036;
+    color: rgba(87, 48, 54, 0.7);
     font-size: 60px;
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
-    opacity: 70%;
     cursor: pointer;
 }
 
@@ -222,13 +222,14 @@
     margin: 0 0 0 900px;
 }
 
+/* Weekly Best Slide Text */
 .best_slider .discount {
     position: absolute;
     display: inline-block;
-    background: rgba(51, 51, 51, 0.8);
+    background: rgba(87, 48, 54, 0.8);
     color: #fff;
     padding: 10px 31px;
-    bottom: 149px;
+    bottom: 148px;
     left: 10px;
     font-size: 17px;
     letter-spacing: 0.05em;
@@ -266,4 +267,65 @@
     color: #bbb;
     text-decoration: line-through;
     margin: 0 0 0 15px;
+}
+
+/* Premium Leather Collection */
+.leather_collect {
+    text-align: center;
+}
+
+.leather_collect div {
+    display: flex;
+    gap: 5px;
+}
+
+.leather_collect h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.025em;
+    margin: 0 0 10px 0;
+}
+
+.leather_collect p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    margin: 0 0 30px 0;
+}
+
+.leather_collect .leather_main {
+    position: relative;
+}
+
+.leather_collect .leather_main .model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.leather_collect .leather_main .model:hover {
+    opacity: 1;
+}
+
+.leather_main .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leather_main .text h3 {
+    font-size: 23px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.leather_main .text p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.leather_sec {
+    flex-wrap: wrap;
 }
