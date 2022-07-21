@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid rgb(0, 19, 194);
-}
+} */
 
 .Wrap {
     letter-spacing: -0.025em;
@@ -274,11 +274,6 @@
     text-align: center;
 }
 
-.leather_collect div {
-    display: flex;
-    gap: 5px;
-}
-
 .leather_collect h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
@@ -286,15 +281,40 @@
     margin: 0 0 10px 0;
 }
 
-.leather_collect p {
+.leather_collect>p {
     font-size: 15px;
     font-weight: 300;
     color: #000;
     margin: 0 0 30px 0;
 }
 
+.leather_collect .container {
+    display: flex;
+    gap: 5px;
+}
+
 .leather_collect .leather_main {
     position: relative;
+    color: #fff;
+}
+
+.leather_main .main_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 1px #000;
+}
+
+.main_text h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.main_text p {
+    font-size: 17px;
+    font-weight: 300;
 }
 
 .leather_collect .leather_main .model {
@@ -309,23 +329,45 @@
     opacity: 1;
 }
 
-.leather_main .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.leather_main .text h3 {
-    font-size: 23px;
-    color: #fff;
-    margin: 0 0 10px 0;
-}
-
-.leather_main .text p {
-    font-size: 15px;
-    color: #fff;
-}
-
 .leather_sec {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.leather_sec figure {
+    position: relative;
+}
+
+.leather_sec figure>div {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%, -50%);
+}
+
+.leather_sec h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    margin: 0 0 15px 0;
+}
+
+.leather_sec p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 35px 0;
+}
+
+.leather_sec .more {
+    display: inline-block;
+    border: 1.5px solid #fff;
+    padding: 10px 20px;
+}
+
+.fabric_video {
+    padding: 150px 0;
 }

@@ -27,4 +27,13 @@ $(function () {
     $('.best_arrow i:nth-child(2)').on('click', function () {
         $('.best_slider').slick('slickNext')
     })
+
+    $('.more').mouseover(function () {
+        $('.sec01').css('filter', 'brightness(70%)');
+    })
+
+    $('.more').mouseout(function () {
+        $('.sec01').css('filter', 'none');
+    })
 })
+
