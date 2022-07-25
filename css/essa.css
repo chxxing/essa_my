@@ -177,11 +177,11 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     letter-spacing: 0.025em;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .weekly_best p {
-    font-size: 15px;
+    font-size: 1.02rem;
     font-weight: 300;
     color: #000;
     margin: 0 0 30px 0;
@@ -272,20 +272,17 @@
 /* Premium Leather Collection */
 .leather_collect {
     text-align: center;
-    padding: 0 0 130px 0;
-    /* background: rgba(51, 51, 51, 0.7);
-    color: #fff; */
 }
 
 .leather_collect h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     letter-spacing: 0.025em;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 .leather_collect>p {
-    font-size: 15px;
+    font-size: 1.02rem;
     font-weight: 300;
     color: #000;
     margin: 0 0 30px 0;
@@ -350,6 +347,11 @@
     transform: translate(-10%, -50%);
 }
 
+.leather_sec figure:hover img {
+    filter: brightness(0.5);
+    transition: filter 0.3s;
+}
+
 .leather_sec h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 27px;
@@ -369,12 +371,82 @@
     display: inline-block;
     border: 1.5px solid #fff;
     padding: 10px 20px;
+    transition: 0.2s;
 }
 
-.fabric_video {
-    padding: 0 0 130px 0;
+.leather_sec figure a:hover {
+    border: 1.5px solid #fff;
+    background: #fff;
+    color: #333;
 }
 
-.fabric_video video {
-    max-width: 100%;
+
+/* premium fabric */
+.fabric_collect {
+    position: relative;
+    padding: 130px 0;
+    text-align: center;
+}
+
+.fabric_collect h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.025em;
+    margin: 0 0 15px 0;
+}
+
+.fabric_collect>p {
+    font-size: 1.02rem;
+    font-weight: 300;
+    color: #000;
+    margin: 0 0 30px 0;
+}
+
+.fabric_collect .container {
+    width: 100%;
+    background: url(../img/background.jpg) no-repeat center center/cover;
+    display: flex;
+}
+
+.fabric_collect .left {
+    width: calc((50% - 250px) / 2 + 250px);
+    overflow: hidden;
+    margin: 0 0 0 auto;
+}
+
+.fabric_collect .right {
+    width: 50%;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.fabric_collect .right .right_slider {
+    width: 100%;
+}
+
+.fabric_collect .right .right_slider figure {
+    padding: 0 50px 0 0;
+}
+
+.fabric_collect .fabric_arrow i {
+    position: absolute;
+    color: rgba(87, 48, 54, 1);
+    font-size: 60px;
+    inset: 55% auto auto 50%;
+    transform: translate(-50%, -55%);
+    cursor: pointer;
+}
+
+.fabric_collect .fabric_arrow i:nth-child(1) {
+    margin: 0 0 0 -600px;
+}
+
+.fabric_collect .fabric_arrow i:nth-child(2) {
+    margin: 0 0 0 900px;
+}
+
+.fabric_text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

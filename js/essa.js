@@ -28,20 +28,28 @@ $(function () {
         $('.best_slider').slick('slickNext')
     })
 
-    $('.more01').mouseover(function () {
-        $('.sec01').css('filter', 'brightness(70%)');
+    $('.left_slider').slick({
+        arrows: false,
+        slidesToScroll: 1,
+        fade: true,
+    });
+
+    $('.right_slider').slick({
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        asNavFor: '.left_slider',
     })
 
-    $('.more01').mouseout(function () {
-        $('.sec01').css('filter', 'none');
+    $('.fabric_arrow i:nth-child(1)').on('click', function () {
+        $('.right_slider').slick('slickPrev')
     })
 
-    $('.more02').mouseover(function () {
-        $('.sec02').css('filter', 'brightness(70%)');
+    $('.fabric_arrow i:nth-child(2)').on('click', function () {
+        $('.right_slider').slick('slickNext')
     })
 
-    $('.more02').mouseout(function () {
-        $('.sec02').css('filter', 'none');
-    })
 })
+
+
 
