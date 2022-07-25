@@ -28,12 +28,20 @@ $(function () {
         $('.best_slider').slick('slickNext')
     })
 
-    $('.more').mouseover(function () {
+    $('.more01').mouseover(function () {
         $('.sec01').css('filter', 'brightness(70%)');
     })
 
-    $('.more').mouseout(function () {
+    $('.more01').mouseout(function () {
         $('.sec01').css('filter', 'none');
+    })
+
+    $('.more02').mouseover(function () {
+        $('.sec02').css('filter', 'brightness(70%)');
+    })
+
+    $('.more02').mouseout(function () {
+        $('.sec02').css('filter', 'none');
     })
 })
 
