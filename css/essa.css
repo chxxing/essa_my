@@ -409,6 +409,7 @@
 }
 
 .fabric_collect .left {
+    position: relative;
     width: calc((50% - 250px) / 2 + 250px);
     overflow: hidden;
     margin: 0 0 0 auto;
@@ -449,4 +450,16 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.fabric_name {
+    position: absolute;
+    font-size: 75px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.025em;
+    inset: auto auto 0 45%;
+    transform: translateX(-50%);
 }

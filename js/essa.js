@@ -48,7 +48,6 @@ $(function () {
     $('.fabric_arrow i:nth-child(2)').on('click', function () {
         $('.right_slider').slick('slickNext')
     })
-
 })
 
 
