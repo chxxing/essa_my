@@ -411,7 +411,7 @@
 /* 패브릭 소파 왼쪽 */
 .fabric_collect .left {
     position: relative;
-    width: calc((50% - 250px) / 2 + 250px);
+    width: calc((50% - 250px) / 2 + 249px);
     overflow: hidden;
     margin: 0 0 0 auto;
 }
@@ -594,4 +594,21 @@
     height: 10px;
     background: rgba(255, 255, 255, 0.2);
     margin: 0 10px;
+}
+
+/* Top 아이콘 */
+.toTop {
+    position: fixed;
+    inset: auto 45px 45px auto;
+}
+
+.toTop i {
+    padding: 8px;
+    background: #a36d6b;
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30%;
+    cursor: pointer;
+    z-index: 999;
 }
