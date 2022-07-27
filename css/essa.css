@@ -384,7 +384,7 @@
 /* premium fabric */
 .fabric_collect {
     position: relative;
-    padding: 130px 0;
+    padding: 150px 0;
     text-align: center;
 }
 
@@ -532,23 +532,29 @@
     padding: 100px 0 0 0;
     background: #a36d6b;
     color: #fff;
-    font-size: 15px;
+    font-size: 13.6px;
     font-weight: 200;
     letter-spacing: 0;
 }
 
 .footer .logo_sns {
     display: flex;
-    justify-content: space-between;
     padding: 0 0 25px 0;
 }
 
 .footer .footer_dl .sns {
     display: flex;
     line-height: 2.5;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 10px 0 -10px 0;
     opacity: 80%;
-    gap: 10px;
+    gap: 5px;
+}
+
+.footer .footer_dl .sns i {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 30%;
 }
 
 .footer .top {
