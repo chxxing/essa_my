@@ -8,6 +8,7 @@
     <title>ESSA - chxxing</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/essa.css">
 </head>
@@ -33,11 +34,11 @@
                             <img src="./img/logo_png.png" alt="">
                         </a>
                     </h1>
-                    <nav>
+                    <nav class="gnb">
                         <ul>
                             <li>
                                 <a href="">소파</a>
-                                <ul>
+                                <!-- <ul>
                                     <li class="bold"><a href="">소파 전체보기</a></li>
                                     <li class="bold"><a href="">패브릭소파 전체보기</a></li>
                                     <li class="bold"><a href="">가죽소파 전체보기</a></li>
@@ -51,16 +52,16 @@
                                     <li><a href="">데이베드형</a></li>
                                     <li><a href="">리클라이너</a></li>
                                     <li><a href="">키즈</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>
                                 <a href="">고객리뷰</a>
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="">포토리뷰</a></li>
                                     <li><a href="">베스트 리뷰</a></li>
                                     <li><a href="">리뷰사은품신청</a></li>
                                     <li><a href="">#SNS 리뷰어 EVENT</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li><a href="">이벤트</a></li>
                             <li><a href="">#베스트</a></li>
@@ -71,19 +72,23 @@
                             <li><a href="">고객지원</a></li>
                             <li>
                                 <a href="">브랜드소개</a>
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="">ABOUT ESSA</a></li>
                                     <li><a href="">히스토리</a></li>
                                     <li><a href="">안전한 ESSA</a></li>
                                     <li><a href="">기능성 패브릭</a></li>
                                     <li><a href="">프리미엄 가죽</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                         </ul>
                     </nav>
-                    <a href="">
-                        <i class="xi-bars"></i>
-                    </a>
+                    <div class="mopen">
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -179,36 +184,42 @@
                             <img src="./img/best03.jpg" alt="">
                             <img src="./img/best04.jpg" alt="">
                         </a>
-                        <a href="" class="discount">53%</a>
-                        <a href="" class="box">에싸몰단독</a>
-                        <a href="" class="coupon">5% 쿠폰</a>
-                        <h3>엠마 4인 리프트기능 슈렁큰텐더 소가죽 소파</h3>
-                        <p>2,350,000원</p>
-                        <span>4,999,000원</span>
+                        <div class="inner_box">
+                            <a href="" class="discount">53%</a>
+                            <a href="" class="box">에싸몰단독</a>
+                            <a href="" class="coupon">5% 쿠폰</a>
+                            <h3>엠마 4인 리프트기능 슈렁큰텐더 소가죽 소파</h3>
+                            <p>2,350,000원</p>
+                            <span>4,999,000원</span>
+                        </div>
                     </figure>
                     <figure>
                         <a href="">
                             <img src="./img/best05.jpg" alt="">
                             <img src="./img/best06.jpg" alt="">
                         </a>
-                        <a href="" class="discount">35%</a>
-                        <a href="" class="box">에싸몰단독</a>
-                        <a href="" class="coupon">스툴무료</a>
-                        <h3>에비뉴 4인 헤드기능 카시미라 패브릭 소파</h3>
-                        <p>2,600,000원</p>
-                        <span>4,000,000원</span>
+                        <div class="inner_box">
+                            <a href="" class="discount">35%</a>
+                            <a href="" class="box">에싸몰단독</a>
+                            <a href="" class="coupon">스툴무료</a>
+                            <h3>에비뉴 4인 헤드기능 카시미라 패브릭 소파</h3>
+                            <p>2,600,000원</p>
+                            <span>4,000,000원</span>
+                        </div>
                     </figure>
                     <figure>
                         <a href="">
                             <img src="./img/best07.jpg" alt="">
                             <img src="./img/best08.jpg" alt="">
                         </a>
-                        <a href="" class="discount">44%</a>
-                        <a href="" class="box">에싸몰단독</a>
-                        <a href="" class="coupon">7%쿠폰</a>
-                        <h3>다즈 4인 오픈코너형 스윙기능 카시미라 패브릭 소파</h3>
-                        <p>3,125,000원</p>
-                        <span>5,579,000원</span>
+                        <div class="inner_box">
+                            <a href="" class="discount">44%</a>
+                            <a href="" class="box">에싸몰단독</a>
+                            <a href="" class="coupon">7%쿠폰</a>
+                            <h3>다즈 4인 오픈코너형 스윙기능 카시미라 패브릭 소파</h3>
+                            <p>3,125,000원</p>
+                            <span>5,579,000원</span>
+                        </div>
                     </figure>
                     <figure>
                         <a href="">
@@ -224,24 +235,28 @@
                             <img src="./img/best11.jpg" alt="">
                             <img src="./img/best12.jpg" alt="">
                         </a>
-                        <a href="" class="discount">26%</a>
-                        <a href="" class="box">에싸몰단독</a>
-                        <a href="" class="coupon">5%쿠폰</a>
-                        <h3>아미르 4인 멀티카우치형 스윙기능 카시미라 패브릭 소파</h3>
-                        <p>2,946,000원</p>
-                        <span>3,979,000원</span>
+                        <div class="inner_box">
+                            <a href="" class="discount">26%</a>
+                            <a href="" class="box">에싸몰단독</a>
+                            <a href="" class="coupon">5%쿠폰</a>
+                            <h3>아미르 4인 멀티카우치형 스윙기능 카시미라 패브릭 소파</h3>
+                            <p>2,946,000원</p>
+                            <span>3,979,000원</span>
+                        </div>
                     </figure>
                     <figure>
                         <a href="">
                             <img src="./img/best13.jpg" alt="">
                             <img src="./img/best14.jpg" alt="">
                         </a>
-                        <a href="" class="discount">36%</a>
-                        <a href="" class="box">에싸몰단독</a>
-                        <a href="" class="coupon">쿠션증정</a>
-                        <h3>에비뉴 4인 오픈코너형 헤드기능 러스티카 패브릭 소파</h3>
-                        <p>2,688,000원</p>
-                        <span>4,200,000원</span>
+                        <div class="inner_box">
+                            <a href="" class="discount">36%</a>
+                            <a href="" class="box">에싸몰단독</a>
+                            <a href="" class="coupon">쿠션증정</a>
+                            <h3>에비뉴 4인 오픈코너형 헤드기능 러스티카 패브릭 소파</h3>
+                            <p>2,688,000원</p>
+                            <span>4,200,000원</span>
+                        </div>
                     </figure>
                     <figure>
                         <a href="">
@@ -567,7 +582,7 @@
                                 <img src="./img/event04.jpg" alt="">
                             </a>
                             <div class="cont_text">
-                                <h3>포토리뷰 이벤트</h3>
+                                <h3>포토 리뷰 이벤트</h3>
                                 <p>상시진행</p>
                             </div>
                         </figure>

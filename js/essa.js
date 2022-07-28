@@ -14,10 +14,23 @@ $(function () {
         $('.main_slider').slick('slickNext')
     })
 
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('.gnb').toggleClass('on')
+    })
+
     $('.best_slider').slick({
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrow: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }]
     })
 
     $('.best_arrow i:nth-child(1)').on('click', function () {
