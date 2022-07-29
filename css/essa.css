@@ -96,6 +96,8 @@ nav>ul>li ul>li.bold {
 @media (max-width: 768px) {
     .Wrap {
         letter-spacing: -0.025em;
+        overflow-x: hidden;
+        /* 스크롤바숨기기 */
     }
 
     .container {
