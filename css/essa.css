@@ -1,5 +1,5 @@
 /* * {
-    outline: 1px solid rgb(0, 19, 194);
+    outline: 1px solid blue;
 } */
 
 .Wrap {
@@ -558,6 +558,7 @@ nav>ul>li ul>li.bold {
 
     .weekly_best .best_slider figure {
         position: relative;
+        width: auto;
         padding: 0 10px;
         text-align: left;
     }
@@ -902,6 +903,7 @@ nav>ul>li ul>li.bold {
     width: calc((50% - 250px) / 2 + 249px);
     overflow: hidden;
     margin: 0 0 0 auto;
+    padding: 0 0;
 }
 
 .left_slider .fabric_name {
@@ -963,7 +965,7 @@ nav>ul>li ul>li.bold {
 }
 
 .fabric_collect .fabric_arrow i:nth-child(1) {
-    margin: 0 0 0 -47%;
+    margin: 0 0 0 -32%;
 }
 
 .fabric_collect .fabric_arrow i:nth-child(2) {
@@ -1003,11 +1005,12 @@ nav>ul>li ul>li.bold {
         width: calc((50% - 210px) / 2 + 250px);
         overflow: hidden;
         margin: 0 0 0 auto;
+        padding: 20px 0 0 0;
     }
 
     .left_slider .fabric_name {
         position: absolute;
-        font-size: 45px;
+        font-size: 35px;
         font-weight: 700;
         color: rgba(255, 255, 255, 0.7);
         font-family: 'Montserrat', sans-serif;
@@ -1026,7 +1029,7 @@ nav>ul>li ul>li.bold {
     .fabric_collect .right {
         width: 50%;
         overflow: hidden;
-        margin: auto 0;
+        margin: 0 0;
     }
 
     .fabric_collect .right .right_slider {
@@ -1034,43 +1037,53 @@ nav>ul>li ul>li.bold {
     }
 
     .fabric_collect .right .right_slider figure {
-        padding: 0 10px;
+        padding: 20px 10px;
+    }
+
+    .right_slider .fb_product {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .right_slider .fb_product h4 {
         font-size: 14px;
-        line-height: 1.2;
-        margin: 30px 0 15px 0;
+        line-height: 1;
+        margin: 20px 0 0 0;
+        order: 1;
     }
 
     .right_slider .fb_product p {
         font-size: 14px;
         font-weight: 500;
-        margin: 0 0 5px 0;
+        margin: 0 0 0 0;
+        order: 3;
     }
 
     .right_slider .fb_product span {
         color: #aaa;
-        font-size: 14px;
+        font-size: 13px;
         text-decoration: line-through;
-        margin: 0 0 0 0;
+        margin: 0 0 -5px 0;
+        order: 2;
     }
 
     .fabric_collect .fabric_arrow i {
         position: absolute;
         color: rgba(255, 255, 255, 0.7);
         font-size: 35px;
-        inset: auto auto 20% 50%;
+        inset: auto auto 40% 50%;
         transform: translate(-50%, -50%);
         cursor: pointer;
     }
 
     .fabric_collect .fabric_arrow i:nth-child(1) {
-        margin: 0 0 0 -47%;
+        margin: 0 0 0 -45%;
     }
 
     .fabric_collect .fabric_arrow i:nth-child(2) {
-        margin: 0 0 0 0;
+        margin: 0 0 0 -2%;
     }
 }
 
@@ -1127,7 +1140,7 @@ nav>ul>li ul>li.bold {
 
     .event h2 {
         font-family: 'Montserrat', sans-serif;
-        font-size: 35px;
+        font-size: 25px;
         letter-spacing: 0.035em;
         margin: 0 0 30px 0
     }
@@ -1178,6 +1191,10 @@ nav>ul>li ul>li.bold {
 
 .footer .logo_sns {
     padding: 40px 0;
+}
+
+.footer .logo_sns .sns {
+    display: none;
 }
 
 .footer .footer_dl .sns {
@@ -1235,7 +1252,7 @@ nav>ul>li ul>li.bold {
 }
 
 /* Top 아이콘 */
-/* .toTop {
+.toTop {
     position: fixed;
     inset: auto 4% 4% auto;
 }
@@ -1249,4 +1266,143 @@ nav>ul>li ul>li.bold {
     border-radius: 30%;
     cursor: pointer;
     z-index: 999;
-} */
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 50px 0 0 0;
+        background: #a36d6b;
+        color: #fff;
+        font-size: 12.7px;
+        font-weight: 200;
+        letter-spacing: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .logo_sns {
+        padding: 20px 0;
+    }
+
+    .footer .logo_sns .sns {
+        display: flex;
+        justify-content: center;
+        line-height: 2.5;
+        font-size: 20px;
+        margin: 10px 0 -10px 0;
+        opacity: 80%;
+        gap: 5px;
+    }
+
+    .footer .logo_sns .sns i {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 4px;
+        border-radius: 30%;
+    }
+
+    .footer .footer_dl .sns {
+        display: none;
+        line-height: 2.5;
+        font-size: 20px;
+        margin: 10px 0 -10px 0;
+        opacity: 80%;
+        gap: 5px;
+    }
+
+    .footer .footer_dl .sns i {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 5px;
+        border-radius: 30%;
+    }
+
+    .footer .top {
+        border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+        padding: 0 0 30px 0;
+    }
+
+    .footer .top figure {
+        display: inline-block;
+        filter: invert(1);
+        opacity: 0.5;
+        width: 140px;
+    }
+
+    .footer .top .footer_dl {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* justify-content: space-around;
+        flex-wrap: wrap; */
+        line-height: 1.37;
+    }
+
+    .footer .top .footer_dl dt {
+        font-weight: 400;
+        margin: 15px 0 5px 0;
+    }
+
+    /* 
+    .footer .top .dl01 {
+        order: 1;
+    }
+
+    .footer .top .dl02 {
+        order: 3;
+    }
+
+    .footer .top .dl03 {
+        order: 4;
+    }
+
+    .footer .top .dl04 {
+        order: 2;
+    } */
+
+    .footer .top .dl02 dd {
+        display: none;
+    }
+
+    .footer .top .dl03 dd {
+        display: none;
+    }
+
+    .footer .bottom {
+        padding: 30px;
+        line-height: 1.37;
+    }
+
+    .footer .bottom dl {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    .footer .bottom dl>dd {
+        display: inline;
+    }
+
+    .footer .bottom dl>dd~dd::before {
+        content: "";
+        display: none;
+        width: 1px;
+        height: 9px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 0 10px;
+    }
+
+    .toTop {
+        position: fixed;
+        inset: auto 4% 4% auto;
+    }
+
+    .toTop i {
+        padding: 6px;
+        background: #a36d6b;
+        color: #fff;
+        font-size: 27px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 30%;
+        cursor: pointer;
+        z-index: 999;
+    }
+}

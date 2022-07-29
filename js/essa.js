@@ -27,8 +27,8 @@ $(function () {
             breakpoint: 768,
             settings: {
                 arrow: false,
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }]
     })
@@ -45,6 +45,13 @@ $(function () {
         arrows: false,
         slidesToScroll: 1,
         fade: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrow: false,
+                slidesToScroll: 1,
+            }
+        }]
     });
 
     $('.right_slider').slick({
@@ -52,6 +59,15 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 2,
         asNavFor: '.left_slider',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrow: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.left_slider',
+            }
+        }]
     })
 
     $('.fabric_arrow i:nth-child(1)').on('click', function () {
