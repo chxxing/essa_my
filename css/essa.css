@@ -1215,7 +1215,7 @@ nav>ul>li ul>li.bold {
 }
 
 .footer .top {
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(117, 50, 50, 0.1);
     padding: 0 0 30px 0;
 }
 
