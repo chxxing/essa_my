@@ -4,6 +4,7 @@ $(function () {
         autoplay: true,
         pauseOnHover: false,
         pauseOnFocus: false,
+        autoplaySpeed: 4000,
     })
 
     $('.main_arrow i:nth-child(1)').on('click', function () {
