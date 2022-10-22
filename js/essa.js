@@ -28,8 +28,8 @@ $(function () {
             breakpoint: 768,
             settings: {
                 arrow: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
         }]
     })
@@ -51,6 +51,7 @@ $(function () {
             settings: {
                 arrow: false,
                 slidesToScroll: 1,
+                fade: true,
             }
         }]
     });
