@@ -47,7 +47,7 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 770,
             settings: {
                 arrow: false,
                 slidesToShow: 2,
@@ -117,7 +117,7 @@ $(function () {
 })
 
 AOS.init({
-    offset: 150,
+    offset: 100,
     duration: 800,
     easing: 'ease-in-out',
 });

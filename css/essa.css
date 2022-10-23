@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid blue;
-} */
+}
 
 .Wrap {
     min-width: 190rem;
@@ -197,9 +197,9 @@ body.noScroll {
 
     .Header .menu h1 {
         position: absolute;
-        top: 2.5rem;
-        left: 20%;
-        transform: translateX(-50%);
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, 55%);
         font-size: 0;
         z-index: 1000;
     }
@@ -222,7 +222,7 @@ body.noScroll {
         position: fixed;
         top: 0;
         left: -100%;
-        width: calc(100% - 20rem);
+        width: calc(100% - 11rem);
         height: 100vh;
         padding: 10rem 2rem 0 2rem;
         line-height: 5rem;
@@ -565,7 +565,7 @@ body.noScroll {
     .Weekly_best .best_slider figure {
         position: relative;
         padding: 0 2rem;
-        margin: 0 0 10rem 0;
+        margin: 0 0 8.5rem 0;
         text-align: left;
     }
 
@@ -605,6 +605,7 @@ body.noScroll {
     /* Weekly Best Slide Text */
     .Weekly_best .best_slider .inner_box {
         display: inline-block;
+        min-height: 2.8rem;
     }
 
     .Weekly_best .best_slider .discount {
