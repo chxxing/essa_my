@@ -513,7 +513,7 @@ body.noScroll {
 /* Weekly Best Slide Text */
 .Weekly_best .best_slider .inner_box {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .Weekly_best .best_slider .discount {
@@ -853,13 +853,13 @@ body.noScroll {
 
 .Fabric_collect .container {
     width: 100%;
-    gap: 30px;
+    gap: 3rem;
     background: url(../img/background.jpg) no-repeat center center/cover;
 }
 
 /* fabric 왼쪽 */
 .Fabric_collect .left {
-    width: calc((50% - 1170px) / 2 + 664px);
+    width: calc((50% - 117rem) / 2 + 66.4rem);
     margin: 0 0 0 auto;
     position: relative;
     overflow: hidden;
@@ -1219,7 +1219,7 @@ body.noScroll {
     .Footer .top figure {
         filter: invert(1);
         opacity: 0.5;
-        width: 140px;
+        width: 14rem;
     }
 
     .Footer .top .footer_dl {
