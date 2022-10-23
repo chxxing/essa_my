@@ -6,6 +6,10 @@
     min-width: 190rem;
 }
 
+body.noScroll {
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     width: 117rem;
@@ -193,11 +197,11 @@
 
     .Header .menu h1 {
         position: absolute;
-        top: 2rem;
+        top: 2.5rem;
         left: 20%;
         transform: translateX(-50%);
         font-size: 0;
-        z-index: 9999;
+        z-index: 1000;
     }
 
     .Header .menu .mopen {
@@ -205,7 +209,7 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
-        z-index: 9999;
+        z-index: 999;
     }
 
     .Header a {
@@ -218,10 +222,11 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: calc(100% - 3rem);
+        width: calc(100% - 20rem);
         height: 100vh;
         padding: 10rem 2rem 0 2rem;
-        line-height: 4rem;
+        line-height: 5rem;
+        border-right: 1px solid #ddd;
         justify-content: flex-start;
         background: #fff;
         z-index: 999;
@@ -240,28 +245,39 @@
     .Header .gnb ul>li {
         font-size: 1.7rem;
         font-weight: 500;
+        padding: 0 0 0 1.2rem;
     }
 
     .Header .gnb>ul>li {
         position: relative;
+        border-bottom: 1px solid #ddd;
     }
 
     .Header .gnb>ul>li>a:hover {
         color: #a36d6b;
     }
 
-    .Header .gnb .smenu {
+    .Header .gnb>ul .after_menu::after {
+        content: "\e942";
         position: absolute;
+        top: 0;
+        right: 2rem;
+        font-family: "xeicon";
+    }
+
+    .Header .gnb .smenu {
+        display: none;
+        position: static;
         top: 8rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 16.5rem;
+        left: 0%;
+        transform: translateX(0%);
+        width: auto;
         background: #fff;
-        border: 1px solid #ededed;
-        text-align: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.2s;
+        border: none;
+        text-align: left;
+        opacity: 1;
+        visibility: visible;
+        transition: none;
         z-index: 999;
     }
 
