@@ -46,14 +46,24 @@ $(function () {
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
-        responsive: [{
-            breakpoint: 770,
-            settings: {
-                arrow: false,
-                slidesToShow: 2,
-                slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 770,
+                settings: {
+                    arrow: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 510,
+                settings: {
+                    arrow: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
-        }]
+        ]
     })
 
     $('.best_arrow i:nth-child(1)').on('click', function () {
