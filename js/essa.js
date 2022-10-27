@@ -13,6 +13,13 @@ $(function () {
         $('.smenu').removeAttr('style');
     });
 
+    $('.footer_dl dt').on('click', function () {
+        var width = $(window).width();
+        if (width < 768) {
+            $(this).toggleClass('on');
+        }
+    });
+
     $('.hamburger').on('click', function () {
         $(this).toggleClass('is-active');
         $('.gnb').toggleClass('on');

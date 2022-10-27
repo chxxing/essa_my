@@ -904,7 +904,7 @@ body.noScroll {
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:510px) {
     * {
         outline: 1px solid blue;
     }
@@ -1447,20 +1447,27 @@ body.noScroll {
     letter-spacing: 0;
 }
 
-.Footer .flogo {
-    padding: 0 0 5rem 0;
+.Footer .inner {
+    position: relative;
 }
 
-.Footer .footer_dl .sns {
+.Footer .top .flogo {
+    margin: 0 0 3rem 0;
+}
+
+.Footer .sns {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
     display: flex;
     line-height: 2.5;
     font-size: 2rem;
-    margin: 1rem 0 -1rem 0;
+    margin: 0 0 2rem 0;
     opacity: 80%;
     gap: 0.5rem;
 }
 
-.Footer .footer_dl .sns i {
+.Footer .sns i {
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.5rem;
     border-radius: 30%;
@@ -1468,7 +1475,7 @@ body.noScroll {
 
 .Footer .top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0 0 30px 0;
+    padding: 0 0 4rem 0;
 }
 
 .Footer .top figure {
@@ -1534,27 +1541,30 @@ body.noScroll {
     }
 
     .Footer .inner {
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
     .Footer .top .flogo {
-        padding: 0 0 3rem 0;
+        padding: 0 0 0rem 0;
     }
 
-    .Footer .footer_dl .sns {
+    .Footer .sns {
+        position: static;
+        bottom: -3rem;
+        left: 0;
         display: flex;
         justify-content: center;
         line-height: 2.5;
         font-size: 2rem;
-        margin: 1rem 0 1rem 0;
+        margin: -1rem 0 1rem 0;
         opacity: 80%;
         gap: 0.5rem;
     }
 
-    .Footer .footer_dl .sns i {
+    .Footer .sns i {
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.5rem;
         border-radius: 30%;
@@ -1563,19 +1573,35 @@ body.noScroll {
     .Footer .top {
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 0 0 2rem 0;
+        padding: 0 0 3rem 0;
     }
 
     .Footer .top figure {
         filter: invert(1);
         opacity: 0.5;
-        width: 14rem;
     }
 
     .Footer .top .footer_dl {
         display: flex;
-        flex-direction: column;
+        justify-content: normal;
+        flex-direction: row;
         line-height: 1.37;
+    }
+
+    .Footer .top dt::after {
+        content: "\e907";
+        font-family: 'xeicon';
+        font-size: 12px;
+        margin: 0 0 0 5px;
+    }
+
+    .Footer .top dt.on::after {
+        content: "\e906";
+        color: red;
+    }
+
+    .Footer .top dt.on & dd {
+        display: none;
     }
 
     .Footer .top .footer_dl dt {
