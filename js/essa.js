@@ -69,6 +69,14 @@ $(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
+            },
+            {
+                breakpoint: 414,
+                settings: {
+                    arrow: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
         ]
     })

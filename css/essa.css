@@ -904,11 +904,7 @@ body.noScroll {
     }
 }
 
-@media (max-width:510px) {
-    * {
-        outline: 1px solid blue;
-    }
-
+@media (max-width:414px) {
     .Weekly_best {
         position: relative;
     }
@@ -916,7 +912,7 @@ body.noScroll {
     .Weekly_best .best_slider figure {
         position: relative;
         padding: 0 2rem;
-        margin: 0 0 8.5rem 0;
+        margin: 0 0 6.2rem 0;
         text-align: left;
     }
 
@@ -956,7 +952,7 @@ body.noScroll {
     /* Weekly Best Slide Text */
     .Weekly_best .best_slider .inner_box {
         display: inline-block;
-        min-height: 2.8rem;
+        min-height: 0rem;
     }
 
     .Weekly_best .best_slider .discount {
@@ -978,7 +974,7 @@ body.noScroll {
 
     .Weekly_best .best_slider .txt_box {
         position: absolute;
-        bottom: -8rem;
+        bottom: -6rem;
         left: 0;
         padding: 0 2rem;
     }
@@ -1013,6 +1009,7 @@ body.noScroll {
 .Leather_collect .leather_main {
     position: relative;
     color: #fff;
+    flex: 1;
 }
 
 .Leather_collect .leather_main .main_text {
@@ -1049,6 +1046,7 @@ body.noScroll {
 .Leather_collect .leather_sec {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 0.5rem;
 }
 
@@ -1108,6 +1106,7 @@ body.noScroll {
     .Leather_collect .leather_main {
         position: relative;
         color: #fff;
+        flex: 1;
     }
 
     .Leather_collect .leather_main .main_text {
@@ -1146,7 +1145,8 @@ body.noScroll {
     .Leather_collect .leather_sec {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        flex: 1;
+        gap: 0.3rem;
     }
 
     .Leather_collect .leather_sec figure {
@@ -1172,6 +1172,110 @@ body.noScroll {
         font-weight: 600;
         letter-spacing: 0.025em;
         margin: 0 0 2rem 0;
+    }
+
+    .Leather_collect .leather_sec p {
+        font-size: 0;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .Leather_collect .leather_sec figure a {
+        display: inline-block;
+        font-size: 1.4rem;
+        border: 1.5px solid #fff;
+        padding: 0.8rem 1.3rem;
+        transition: 0.2s;
+    }
+
+    .Leather_collect .leather_sec figure a:hover {
+        border: 1.5px solid #fff;
+        background: #fff;
+        color: #333;
+    }
+}
+
+@media (max-width:414px) {
+    .Leather_collect {
+        padding: 7rem 2rem;
+    }
+
+    .Leather_collect .container {
+        gap: 0.3rem;
+    }
+
+    .Leather_collect .leather_main {
+        position: relative;
+        color: #fff;
+        flex: 1;
+    }
+
+    .Leather_collect .leather_main .main_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 1px #000;
+    }
+
+    .Leather_collect .main_text h3 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.2;
+        min-height: 0rem;
+        min-width: 12rem;
+        margin: 0 0 0 0;
+    }
+
+    .Leather_collect .main_text p {
+        font-size: 0rem;
+        font-weight: 300;
+    }
+
+    .Leather_collect .leather_main .model {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .Leather_collect .leather_main .model:hover {
+        opacity: 1;
+    }
+
+    .Leather_collect .leather_sec {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 0.3rem;
+    }
+
+    .Leather_collect .leather_sec figure {
+        position: relative;
+    }
+
+    .Leather_collect .leather_sec figure>div {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Leather_collect .leather_sec figure:hover img {
+        filter: brightness(0.5);
+        transition: filter 0.3s;
+    }
+
+    .Leather_collect .leather_sec h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 600;
+        letter-spacing: 0.025em;
+        min-width: 12rem;
+        margin: 0 0 1rem 0;
     }
 
     .Leather_collect .leather_sec p {
@@ -1367,6 +1471,93 @@ body.noScroll {
     }
 }
 
+@media (max-width:414px) {
+    .Fabric_collect {
+        position: relative;
+    }
+
+    .Fabric_collect .container {
+        width: 100%;
+        gap: 3rem;
+        background: url(../img/background.jpg) no-repeat center center/cover;
+    }
+
+    .Fabric_collect .left {
+        width: 50%;
+        padding: 2rem 2rem;
+        margin: 0 0 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Fabric_collect .fabric_name strong {
+        position: absolute;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.025em;
+        inset: auto auto -0.4rem 50%;
+        transform: translateX(-50%);
+        transition: color 0.3s;
+    }
+
+    .Fabric_collect .fabric_name strong:hover {
+        color: #fff;
+    }
+
+    .Fabric_collect .right {
+        width: 50%;
+        overflow: hidden;
+        margin: auto 0;
+    }
+
+    .Fabric_collect .right_slider figure {
+        padding: 2rem 2rem 0 0;
+    }
+
+    .Fabric_collect .right_slider figure img {
+        margin: 0 0 2rem 0;
+    }
+
+    .Fabric_collect .right_slider .fb_product h3 {
+        font-size: 1.5rem;
+        min-height: 2rem;
+        margin: 0 0 2rem 0;
+        line-height: 1.2;
+    }
+
+    .Fabric_collect .right_slider .fb_product p {
+        font-size: 0;
+        font-weight: 500;
+        margin: 0 0 0 0;
+    }
+
+    .Fabric_collect .right_slider .fb_product span {
+        font-size: 0;
+        display: block;
+        color: #aaa;
+        text-decoration: line-through;
+    }
+
+    .Fabric_collect .fabric_arrow i {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 5rem;
+        inset: 55% auto auto 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .Fabric_collect .fabric_arrow i:nth-child(1) {
+        margin: 0 0 0 -46%;
+    }
+
+    .Fabric_collect .fabric_arrow i:nth-child(2) {
+        margin: 0 0 0 46%;
+    }
+}
+
 /* event */
 .Event .container {
     flex-direction: column;
@@ -1420,6 +1611,45 @@ body.noScroll {
 
     .Event .cont_text {
         min-height: 9rem;
+        border: 1px solid #ddd;
+        padding: 1rem;
+    }
+
+    .Event .cont_text h3 {
+        font-size: 1.5rem;
+        margin: 0 0 1rem 0;
+        line-height: 1.3;
+
+    }
+
+    .Event .cont_text p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+}
+
+@media (max-width:414px) {
+    .Event {
+        padding: 7rem 2rem;
+    }
+
+    .Event .container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .Event .cont_fst {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .Event .cont_sec {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .Event .cont_text {
+        min-height: 12rem;
         border: 1px solid #ddd;
         padding: 1rem;
     }
@@ -1531,6 +1761,7 @@ body.noScroll {
 }
 
 @media (max-width:768px) {
+
     .Footer {
         padding: 4rem 0 0 0;
         background: #a36d6b;
@@ -1584,24 +1815,28 @@ body.noScroll {
     .Footer .top .footer_dl {
         display: flex;
         justify-content: normal;
-        flex-direction: row;
+        flex-direction: column;
         line-height: 1.37;
+        cursor: pointer;
+    }
+
+    .Footer .top dd {
+        display: none;
     }
 
     .Footer .top dt::after {
-        content: "\e907";
+        content: "\e942";
         font-family: 'xeicon';
         font-size: 12px;
         margin: 0 0 0 5px;
     }
 
     .Footer .top dt.on::after {
-        content: "\e906";
-        color: red;
+        content: "\e945";
     }
 
-    .Footer .top dt.on & dd {
-        display: none;
+    .Footer .top dt.on~dd {
+        display: block;
     }
 
     .Footer .top .footer_dl dt {
